@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5sp"
+     >
+    
+	    
+	    <GridLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:rowCount="2"
+	        android:columnCount="5"
+	        >
+
+  
+   <TextView
+            android:id="@+id/labelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:textColor="#FF000000"
+            android:text="@string/id"
+            android:textSize="16sp"
+            android:layout_column="0"
+            android:layout_row="0"
+        />
+    
+   <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="14sp"
+             android:layout_column="1"
+             android:layout_row="0"
+        />
+   <TextView
+            android:id="@+id/labelModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="@string/modelo"
+            android:textSize="16sp"
+            android:layout_column="0"
+            android:layout_row="1"
+        />
+     <TextView
+            android:id="@+id/modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="14sp"
+             android:layout_row="1"
+             android:layout_column="1"
+        />
+     <TextView
+            android:id="@+id/labelDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="@string/descricao"
+             android:textSize="16sp"
+             android:layout_column="2"
+             android:layout_row="1"
+        />
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="14sp"
+             android:layout_column="3"
+             android:layout_row="1"
+             
+        />
+    
+        
+          <CheckBox
+            android:id="@+id/checkBox1"
+            style="@style/padrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+      		android:clickable="false"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:button="@xml/custom_checkbox"
+            />
+ 
+        </GridLayout>
+</LinearLayout>

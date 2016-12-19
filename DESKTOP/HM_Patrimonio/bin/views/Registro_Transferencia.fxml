@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.RegistroTrasferenciaController">
+   <children>
+      <TitledPane animated="false" collapsible="false" layoutX="12.0" layoutY="8.0" prefHeight="484.0" prefWidth="642.0" text="Histórico de transferência">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="640.0">
+               <children>
+                  <TableView fx:id="tbTransferencia" layoutX="14.0" layoutY="121.0" onMouseClicked="#selectItem" prefHeight="326.0" prefWidth="615.0">
+                    <columns>
+                      <TableColumn fx:id="columnOrigem" prefWidth="142.0" text="Origem" />
+                      <TableColumn fx:id="columnDestino" prefWidth="156.0" text="Destino" />
+                        <TableColumn fx:id="columnPat" prefWidth="129.0" text="Patrimonio" />
+                        <TableColumn fx:id="columnDtTransferencia" prefWidth="187.0" text="Data de Transferência" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="18.0" text="Origem:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="57.0" text="Destino: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="314.0" layoutY="19.0" text="Data Transfer.: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txfOrigem" layoutX="93.0" layoutY="16.0" onAction="#buscarOri" prefHeight="30.0" />
+                  <TextField fx:id="txfDestino" layoutX="93.0" layoutY="53.0" onAction="#buscarDest" prefHeight="30.0" />
+                  <DatePicker fx:id="dtpTransferencia" layoutX="449.0" layoutY="16.0" onAction="#buscarData" prefHeight="30.0" prefWidth="176.0" />
+                  <ImageView fx:id="btnBuscarOrigem" fitHeight="30.0" fitWidth="34.0" layoutX="251.0" layoutY="14.0" onMouseClicked="#btnBuscarOri" onMouseEntered="#mudarGlowOrigem" onMouseExited="#normalizarOrigem" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/imagens/zoom.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnBuscarDestino" fitHeight="30.0" fitWidth="34.0" layoutX="252.0" layoutY="53.0" onMouseClicked="#btnBuscarDest" onMouseEntered="#mudarGlowDestino" onMouseExited="#normalizarDestino" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/imagens/zoom.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="txMotivo" editable="false" layoutX="421.0" layoutY="55.0" prefHeight="47.0" prefWidth="204.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="lbMotivo" layoutX="342.0" layoutY="53.0" prefHeight="30.0" prefWidth="70.0" text="Motivo:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TitledPane>
+   </children>
+</Pane>

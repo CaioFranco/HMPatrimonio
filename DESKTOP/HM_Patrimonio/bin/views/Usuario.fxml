@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.UsuarioController">
+   <children>
+      <TitledPane layoutX="11.0" layoutY="24.0" prefHeight="185.0" prefWidth="969.0" text="Dados para cadastro">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="967.0">
+               <children>
+                  <Label layoutX="239.0" layoutY="20.0" prefHeight="30.0" prefWidth="65.0" text="Nome:  ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txfId" disable="true" layoutX="80.0" layoutY="20.0" prefHeight="30.0" prefWidth="100.0" />
+                  <TextField fx:id="txfNome" layoutX="304.0" layoutY="20.0" prefHeight="30.0" prefWidth="250.0" />
+                  <ComboBox fx:id="cmbPermissao" layoutX="707.0" layoutY="20.0" prefHeight="30.0" prefWidth="241.0" promptText="Permisssão..." />
+                  <TextField fx:id="txfEmail" layoutX="80.0" layoutY="65.0" prefHeight="30.0" prefWidth="869.0" />
+                  <TextField fx:id="txfLogin" layoutX="80.0" layoutY="110.0" prefHeight="30.0" prefWidth="130.0" />
+                  <PasswordField fx:id="txfSenha" layoutX="350.0" layoutY="110.0" prefHeight="30.0" prefWidth="149.0" />
+                  <PasswordField fx:id="txfConfSenha" layoutX="740.0" layoutY="110.0" prefHeight="30.0" prefWidth="207.0" />
+                  <Label layoutX="20.0" layoutY="65.0" prefHeight="30.0" prefWidth="60.0" text="Email:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="611.0" layoutY="20.0" prefHeight="30.0" prefWidth="96.0" text="Permissão: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="110.0" prefHeight="30.0" prefWidth="60.0" text="Login:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="543.0" layoutY="110.0" prefHeight="30.0" prefWidth="195.0" text="Confirmação de Senha: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="290.0" layoutY="110.0" prefHeight="30.0" prefWidth="60.0" text="Senha:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="19.0" prefHeight="30.0" prefWidth="65.0" text="Código:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TitledPane>
+      <Button fx:id="btnSalvar" layoutX="795.0" layoutY="218.0" mnemonicParsing="false" onAction="#salvar" prefHeight="30.0" prefWidth="80.0" text="Salvar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnNovo" layoutX="889.0" layoutY="218.0" mnemonicParsing="false" onAction="#novo" prefHeight="30.0" prefWidth="80.0" text="Novo" textFill="#3ac8e8">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="20.0" layoutY="220.0" prefHeight="30.0" prefWidth="65.0" text="Nome:  ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfBuscar" layoutX="79.0" layoutY="220.0" onAction="#buscar" prefHeight="30.0" prefWidth="170.0" />
+      <ImageView fx:id="btnBuscar" fitHeight="30.0" fitWidth="34.0" layoutX="256.0" layoutY="220.0" onMouseClicked="#buscarNome" onMouseEntered="#mudarGlow" onMouseExited="#normalizar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbUsuario" layoutX="12.0" layoutY="269.0" onMouseClicked="#selectItem" prefHeight="255.0" prefWidth="854.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="75.0" text="Código" />
+            <TableColumn fx:id="columnNome" minWidth="0.0" prefWidth="305.0" text="Nome" />
+            <TableColumn fx:id="columnPermissao" prefWidth="172.0" text="Permissão" />
+            <TableColumn fx:id="columnLogin" minWidth="0.0" prefWidth="214.0" text="Login" />
+          <TableColumn fx:id="columnStatus" prefWidth="87.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInativar" alignment="CENTER" layoutX="888.0" layoutY="445.0" mnemonicParsing="false" onAction="#inativar" prefHeight="30.0" prefWidth="80.0" text="Inativar" textFill="#e1a330">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSair" layoutX="888.0" layoutY="490.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="80.0" text="Sair" textFill="#b94949">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+   </children>
+</Pane>

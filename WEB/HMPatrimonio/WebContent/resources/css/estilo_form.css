@@ -1,0 +1,174 @@
+@CHARSET "utf-8";
+/* CSS Document */
+body{
+	background-image: url("../imgs/bg.jpg");
+}
+
+.header {
+    background-color:#4682B4;
+    color:white;
+    text-align:center;
+    padding:5px;
+    margin-left: 20%;
+    margin-right: 20%;
+      
+}
+.footer {
+    background-color:#4682B4;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px:2%;
+    margin-top: 2%;		
+    margin-left: 20%;
+    margin-right: 20%; 	 
+}
+
+
+.conteudo {
+  margin-top:2%; 
+}
+
+h2 {
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #4682B4;
+}
+
+
+h3 {
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+fieldset {
+	background: #87CEEB	;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: -1%;
+}
+
+#acesso{
+	background: #87CEEB	;
+	margin-left: auto;
+	margin-right:auto;
+	width: 98%;
+}
+
+legend {
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 50%;
+	padding-left: 15px;
+	color: #00008B;
+	background: #ADD8E6;
+	border: 1px solid #696969;
+}
+
+#cad{
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 30%;
+	padding-left: 15px;
+	color: #00008B;
+	background: #ADD8E6;
+	border: 1px solid #696969;
+	text-align: left;
+	margin-left: 5%;
+	margin-bottom: 1%;
+}
+
+
+label {
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 130px;
+	background: #87CEEB;
+}
+
+label, input {
+	float: left;
+	display: block;
+}
+
+input[type="submit"] {
+	width: 100px;
+	height: 25px;
+	color: #008000;
+	margin-left: 83%;
+	margin-bottom:1%;
+	font-size: 12px;
+	font-weight: bold;
+	background: #FFFAFA;
+}
+
+
+
+input[type="text"] {
+	margin-left:2%;
+	width: 78%;
+	height: 20px;
+	color: #000;
+	background: #B0C4DE;
+}
+
+
+input[type="email"] {
+	margin-left:2%;
+	width: 78%;
+	height: 20px;
+	color: #000;
+	background: #B0C4DE;
+}
+
+input[type="number"] {
+		margin-left:2%;
+	width: 78%;
+	height: 20px;
+	color: #000;
+	background: #B0C4DE;
+}
+
+select {
+	margin-left:-3%;
+	width: 78%;
+	height: 20px;
+	color: #000;
+	background: #B0C4DE;
+}
+
+input[type="date"] {
+	margin-left:2%;
+	width: 78%;
+	height: 20px;
+	color: #000;
+	background: #B0C4DE;
+}
+
+textarea {
+	margin-left:-3%;
+	width: 78%;
+	height: 50px;
+	color: #000;
+	background: #B0C4DE;
+	font-size: 12px;
+	font-weight: bold;
+	background: #B0C4DE;
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+

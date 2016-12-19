@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.senai.hm.activity.MainActivity"
+    android:padding="20dp" >
+    
+    <TextView
+        android:id="@+id/tvGestor"
+        style="@style/label"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+    <GridLayout 
+        style="@style/label"
+        android:layout_centerVertical="true"
+        android:columnCount="2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tvGestor"
+      >    
+      <RelativeLayout 
+          android:layout_column="0"
+          android:layout_row="0"
+          style="@style/label"
+          >         
+        <ImageButton
+            android:id="@+id/btnListar"
+            style="@style/tamanho"
+            android:src="@drawable/lista"
+            android:adjustViewBounds="true" 
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/listar"
+            android:onClick="listar"/>     
+         <TextView
+        	android:id="@+id/tvlistar"
+        	style="@style/label"
+	    	android:layout_below="@id/btnListar"
+        	android:text="@string/listar"
+         /> 
+      </RelativeLayout>
+
+        <RelativeLayout 
+          android:layout_column="0"
+          android:layout_row="1"
+		  style="@style/label"
+          >  
+        
+        <ImageButton
+            android:id="@+id/btnInconsistencia"
+            style="@style/tamanho"
+            android:src="@drawable/inconsistencia"
+            android:adjustViewBounds="true" 
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/conferencia"
+            android:onClick="inconsistencia"
+           />
+        <TextView
+        	android:id="@+id/tvInconsistencia"
+        	style="@style/label"
+	    	android:layout_below="@id/btnInconsistencia"
+        	android:text="@string/inconsistencia"
+         /> 
+        
+        </RelativeLayout>
+
+        <RelativeLayout 
+          android:layout_column="1"
+          android:layout_row="1"
+		  style="@style/label"
+          >  
+        
+        <ImageButton
+            android:id="@+id/btnSolicitacao"
+            style="@style/tamanho"
+            android:src="@drawable/solicitacao"
+            android:adjustViewBounds="true" 
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/conferencia"
+            android:onClick="solicitacao"
+           />
+        <TextView
+        	android:id="@+id/tvSolicitacao"
+        	style="@style/label"
+	    	android:layout_below="@id/btnSolicitacao"
+        	android:text="@string/solicitacao"
+         /> 
+        
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/label"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:layout_row="0" >
+
+            <ImageButton
+                android:id="@+id/btnConferencia"
+                style="@style/tamanho"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/conferencia"
+                android:onClick="conferencia"
+                android:scaleType="fitCenter"
+                android:src="@drawable/conferencia" />
+
+            <TextView
+                android:id="@+id/tvConferencia"
+                style="@style/label"
+                android:layout_below="@id/btnConferencia"
+                android:text="@string/conferencia" />
+        </RelativeLayout>
+
+    </GridLayout>
+
+    
+
+</RelativeLayout>

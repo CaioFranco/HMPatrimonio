@@ -1,0 +1,157 @@
+/* CSS Document */
+
+/*Horizontal Menu*/
+/*Credits: Web-Kreation */
+/*URL: http://web-kreation.com/blog/?p=22 */
+
+/***** Global Settings *****/
+body {
+	background-image: url("../imgs/bg.jpg");
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+figure{
+	margin-top:8%;
+}
+
+body {
+	font: 100%/1.25 arial, helvetica, sans-serif;
+	color: #000000;
+	text-align: center;
+}
+
+ul li {
+	list-style-type: none; /*turns off display of bullet*/
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+h2 {
+	color: #006400;
+}
+
+.header {
+	background-color: #808080;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 2%;
+}
+
+.cab{
+	 font-family: Times New Roman;
+	 font-size: 50px;
+}
+
+.footer {
+	background-color: #808080;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 2%;
+}
+
+.geral {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.dir {
+	width: 120px;
+	margin-right: auto;
+	margin-left: auto;
+	border-color: #4682B4;
+	border-style: groove;
+	background-color: #ADD8E6;
+	text-decoration: none;
+	margin-bottom: 10%;
+	margin-top: 2%;
+}
+
+/***** Main Formatting *****/
+.wrapper {
+	width: 250px;
+	text-align: left;
+	float: left;
+}
+
+.conteudo {
+	margin-top: 2%;
+}
+
+.sucesso {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	margin-top: 10%;
+	border-bottom-color: blue;
+}
+/***** MENU *****/
+.wrapperNavlist {
+	display: block;
+	width: 250px;
+	background: #6295E9;
+	margin-bottom: 20px;
+	padding: 0;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: #999999;
+	font-weight: bold;
+	float: left;
+}
+
+.navlist {
+	margin-top: 2%;
+	margin: 0; /*removes indent IE and Opera*/
+	padding: 0; /*removes indent Mozilla and NN7*/
+}
+
+.navlist a, .navlist a:visited {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	/*must be equal to height. Centers the text vertically*/
+	padding: 0 0 0 24px;
+	border: none;
+	border-top: 1px solid #99CCCC;
+	border-bottom: 1px solid #3564D8;
+	color: white;
+	text-decoration: none;
+	background: url(images/nav.jpg) repeat-x left top;
+}
+
+.navlist a:hover {
+	background-position: 0 -24px;
+	/* Shift background image vertically 24px, or start of the 2nd background image (on mouseover) */
+	color: #4682B4;
+	background: #ADD8E6;
+}
+
+.navlist .active a {
+	display: block;
+	background: #548BE7 url(images/bullet.jpg) no-repeat left center;
+	background-position: 25px;
+	padding-left: 45px;
+	cursor: default;
+}

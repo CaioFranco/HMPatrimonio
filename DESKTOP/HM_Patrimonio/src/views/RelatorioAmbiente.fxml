@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="ap" prefHeight="145.0" prefWidth="243.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.senai.hm.controller.RelatorioAmbienteController">
+   <children>
+      <Label layoutX="15.0" layoutY="21.0" text="Escolha o Ambiente Desejado:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboAmbiente" layoutX="15.0" layoutY="60.0" prefHeight="25.0" prefWidth="213.0" />
+      <Button layoutX="159.0" layoutY="99.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar" />
+      <Button layoutX="15.0" layoutY="99.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

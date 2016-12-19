@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.FornecedorController">
+   <children>
+      <TitledPane layoutX="11.0" layoutY="13.0" prefHeight="153.0" prefWidth="738.0" text="Dados para cadastro">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <content>
+            <AnchorPane prefHeight="90.0" prefWidth="736.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="15.0" prefHeight="30.0" prefWidth="58.0" text="CNPJ: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="368.0" layoutY="15.0" prefHeight="30.0" prefWidth="70.0" text="Nome: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="70.0" prefHeight="30.0" prefWidth="87.0" text="Telefone: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="362.0" layoutY="75.0" prefHeight="0.0" prefWidth="70.0" text="E-mail: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txCnpj" layoutX="95.0" layoutY="15.0" prefHeight="30.0" prefWidth="150.0" />
+                  <TextField fx:id="txNome" layoutX="430.0" layoutY="15.0" prefHeight="30.0" prefWidth="260.0" />
+                  <TextField fx:id="txTelefone" layoutX="94.0" layoutY="70.0" prefHeight="30.0" prefWidth="149.0" />
+                  <TextField fx:id="txEmail" layoutX="432.0" layoutY="70.0" prefHeight="30.0" prefWidth="260.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <Button fx:id="btnSalvar" layoutX="339.0" layoutY="475.0" mnemonicParsing="false" onAction="#salvar" prefHeight="30.0" prefWidth="80.0" text="Salvar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNovo" layoutX="28.0" layoutY="475.0" mnemonicParsing="false" onAction="#novo" prefHeight="30.0" prefWidth="80.0" text="Novo" textFill="#3ac8e8">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSair" layoutX="660.0" layoutY="475.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="80.0" text="Sair" textFill="#b94949">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="38.0" layoutY="199.0" text="Nome: ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="201.0" text="CNPJ: ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txBuscarNome" layoutX="102.0" layoutY="195.0" onAction="#buscarNome" prefHeight="30.0" prefWidth="149.0" />
+      <TextField fx:id="txBuscarCnpj" layoutX="421.0" layoutY="197.0" onAction="#buscarCnpj" prefHeight="30.0" prefWidth="149.0" />
+      <ImageView fx:id="btnBuscarNome" fitHeight="30.0" fitWidth="32.0" layoutX="256.0" layoutY="196.0" onMouseClicked="#btnbuscarNome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnBuscarCnpj" fitHeight="30.0" fitWidth="32.0" layoutX="577.0" layoutY="196.0" onMouseClicked="#btnbuscarCNPJ" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbFornecedor" layoutX="14.0" layoutY="249.0" onMouseClicked="#selectItem" prefHeight="213.0" prefWidth="736.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="72.0" text="Código" />
+          <TableColumn fx:id="columnCnpj" prefWidth="117.0" text="CNPJ" />
+            <TableColumn fx:id="columnNome" prefWidth="162.0" text="Nome" />
+            <TableColumn fx:id="columnTel" prefWidth="138.0" text="Telefone" />
+            <TableColumn fx:id="columnEmail" prefWidth="248.0" text="E-mail" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

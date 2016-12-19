@@ -1,0 +1,98 @@
+@CHARSET "utf-8";
+/* CSS Document */
+body{
+		 background-image: url("../imgs/bg.jpg");
+		  background-repeat: repeat-x;
+	 background-repeat: repeat-y;
+
+}
+
+
+
+h1 {
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+}
+
+h2 {
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+fieldset {
+	background: #DCDCDC;
+	margin-right:auto;
+	margin-left:auto;
+	width: 500px;
+	margin-top:10%;
+	
+}
+
+legend {
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 50%;
+	padding-left: 15px;
+	color: #000000;
+	background: #C0C0C0;
+	border: 1px solid #696969;
+}
+
+label {
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 130px;
+	background: #DCDCDC;
+}
+
+label, input {
+	float: left;
+	display: block;
+}
+
+input[type="submit"] {
+	width: 100px;
+	height: 25px;
+	color: #008000;
+	margin-left:78%;
+	margin-right: 5%;
+	font-size: 12px;
+	font-weight: bold;
+	background: #FFFAFA;
+}
+
+#img{
+	margin-top: -11%;
+	margin-left: 80%;
+}
+
+#user {
+	width: 200px;
+	height: 20px;
+	color: #000;
+	background: #ffffff;
+}
+
+#senha {
+	width: 200px;
+	height: 20px;
+	color: #000;
+	background: #ffffff;
+}
+
+#borda{
+	margin-top: -10%;
+	margin-right: -50;
+}
+
+
+

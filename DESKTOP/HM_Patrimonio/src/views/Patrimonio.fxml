@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.PatrimonioController">
+   <children>
+      <TitledPane layoutX="9.0" layoutY="4.0" text="Dados para cadastro">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="243.0" prefWidth="990.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="195.0" maxHeight="30.0" prefHeight="30.0" prefWidth="117.0" text="Data Entrada: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="15.0" prefHeight="25.0" prefWidth="133.0" text="Nº Identificador: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="443.0" layoutY="15.0" maxHeight="30.0" prefHeight="30.0" prefWidth="40.0" text="Qtd: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgFoto" fitHeight="200.0" fitWidth="210.0" layoutX="759.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../resource/imagens/semimagem.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txIdentificador" layoutX="150.0" layoutY="15.0" prefHeight="30.0" />
+                  <TextField fx:id="txQtd" layoutX="490.0" layoutY="15.0" onKeyTyped="#keyTyped" prefHeight="30.0" prefWidth="64.0" />
+                  <TextField fx:id="txValorUnitario" layoutX="150.0" layoutY="60.0" onKeyTyped="#KeyTyped" prefHeight="30.0" />
+                  <TextField fx:id="txDescricao" disable="true" editable="false" layoutX="490.0" layoutY="60.0" prefHeight="30.0" prefWidth="160.0" />
+                  <ComboBox fx:id="comboModelo" layoutX="150.0" layoutY="105.0" onAction="#autoPrechimentoModelo" onMouseClicked="#atualizarModelo" prefHeight="30.0" prefWidth="150.0" />
+                  <Button ellipsisString="+" layoutX="300.0" layoutY="105.0" mnemonicParsing="false" onAction="#addModelo" prefHeight="30.0" prefWidth="25.0" text="+" />
+                  <ComboBox fx:id="comboAmbiente" layoutX="490.0" layoutY="105.0" onMouseClicked="#atualizarAmbiente" prefHeight="30.0" prefWidth="160.0" />
+                  <Button ellipsisString="+" layoutX="650.0" layoutY="105.0" mnemonicParsing="false" onAction="#addAmbiente" prefHeight="30.0" prefWidth="25.0" text="+" />
+                  <RadioButton fx:id="radioNovo" layoutX="150.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="66.0" text="Novo" />
+                  <RadioButton fx:id="radioSeminovo" layoutX="225.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="Seminovo" />
+                  <TextField fx:id="txCategoria" disable="true" layoutX="490.0" layoutY="150.0" prefHeight="30.0" prefWidth="160.0" />
+                  <DatePicker fx:id="dataEntrada" layoutX="150.0" layoutY="195.0" prefHeight="30.0" prefWidth="174.0" />
+                  <TextField fx:id="txFornecedor" disable="true" layoutX="490.0" layoutY="195.0" prefHeight="30.0" prefWidth="160.0" />
+                  <Label layoutX="58.0" layoutY="150.0" maxHeight="30.0" prefHeight="30.0" prefWidth="81.0" text="Situação: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="699.0" layoutY="15.0" maxHeight="30.0" prefHeight="30.0" prefWidth="47.0" text="Foto: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="60.0" maxHeight="30.0" prefHeight="30.0" prefWidth="120.0" text="Valor Unitário: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="105.0" maxHeight="30.0" prefHeight="30.0" prefWidth="65.0" text="Modelo:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="398.0" layoutY="60.0" maxHeight="30.0" prefHeight="30.0" prefWidth="91.0" text="Descrição: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="383.0" layoutY="105.0" maxHeight="30.0" prefHeight="30.0" prefWidth="106.0" text="Localização: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="385.0" layoutY="195.0" maxHeight="30.0" prefHeight="30.0" prefWidth="103.0" text="Fornecedor: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="399.0" layoutY="150.0" maxHeight="30.0" prefHeight="30.0" prefWidth="89.0" text="Categoria: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TitledPane>
+      <Button fx:id="btnSalvar" layoutX="449.0" layoutY="663.0" mnemonicParsing="false" onAction="#salvar" prefHeight="30.0" prefWidth="80.0" text="Salvar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnNovo" layoutX="12.0" layoutY="661.0" mnemonicParsing="false" onAction="#novo" prefHeight="30.0" prefWidth="80.0" text="Novo" textFill="#3ac8e8">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="tbPatrimonio" layoutX="11.0" layoutY="329.0" onMouseClicked="#selectItem" prefHeight="330.0" prefWidth="992.0">
+        <columns>
+          <TableColumn fx:id="columnIdentificador" prefWidth="100.0" text="Nº Identificador" />
+          <TableColumn fx:id="columnAmbiente" minWidth="0.0" prefWidth="144.0" text="Ambiente" />
+            <TableColumn fx:id="columnDescricao" prefWidth="189.0" text="Modelo" />
+            <TableColumn fx:id="columnModelo" minWidth="0.0" prefWidth="170.0" text="Descrição" />
+            <TableColumn fx:id="columnDetalhe" prefWidth="222.0" text="Detalhe" />
+            <TableColumn fx:id="columnSituacao" prefWidth="83.0" text="Situação" />
+            <TableColumn fx:id="columnStatus" prefWidth="83.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="buscarDesc" layoutX="100.0" layoutY="288.0" onAction="#buscarDesc" prefHeight="30.0" prefWidth="154.0" />
+      <ImageView fx:id="btnBuscarDesc" fitHeight="30.0" fitWidth="34.0" layoutX="264.0" layoutY="288.0" onMouseClicked="#btnBuscarDescricao" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscarAmb" layoutX="448.0" layoutY="286.0" onAction="#buscarAmb" prefHeight="30.0" prefWidth="154.0" />
+      <ImageView fx:id="btnBuscarAmb" fitHeight="30.0" fitWidth="34.0" layoutX="607.0" layoutY="286.0" onMouseClicked="#btnBuscarAmb" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscarMod" layoutX="782.0" layoutY="287.0" onAction="#buscarMod" prefHeight="30.0" prefWidth="154.0" />
+      <ImageView fx:id="btnBuscarMod" fitHeight="30.0" fitWidth="34.0" layoutX="942.0" layoutY="285.0" onMouseClicked="#btnBuscarMod" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/zoom.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="364.0" layoutY="286.0" prefHeight="30.0" prefWidth="97.0" text="Ambiente: ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="288.0" prefHeight="30.0" prefWidth="70.0" text="Modelo: ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSair" layoutX="921.0" layoutY="664.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="80.0" text="Sair" textFill="#b94949">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="678.0" layoutY="289.0" prefHeight="25.0" prefWidth="97.0" text="Descrição: ">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

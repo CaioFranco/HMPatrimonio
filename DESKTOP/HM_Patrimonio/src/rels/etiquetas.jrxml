@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" columnCount="3" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="185" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf8d48aa-3815-4a7c-bd11-14dc5c58b9a1">
+	<property name="ireport.zoom" value="1.4641000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Row">
+		<conditionalStyle>
+			<style/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[SELECT
+     patrimonio.`id` ,
+
+FROM
+     `patrimonio` patrimonio]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_fantasia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="88" splitType="Stretch">
+			<frame>
+				<reportElement x="-1" y="0" width="184" height="87" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="d7030e0e-fb5c-45f5-8085-f348fe5a6395"/>
+				<image>
+					<reportElement isPrintRepeatedValues="false" x="3" y="4" width="91" height="81" uuid="161dde8f-cd1a-460c-9256-591c9c207b82"/>
+					<imageExpression><![CDATA[com.google.zxing.client.j2se.MatrixToImageWriter.toBufferedImage(
+new com.google.zxing.qrcode.QRCodeWriter().encode(
+"ID:"+$F{id}+"\nEmpresa:"+$F{nome_fantasia}
+,com.google.zxing.BarcodeFormat.QR_CODE,275 ,275 ))]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement isPrintRepeatedValues="false" mode="Transparent" x="94" y="48" width="80" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="f3514d6c-d25d-40ea-a6be-df2b5f231fb8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+						<font fontName="Arial" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="122" y="28" width="28" height="20" uuid="f5f8d680-14ba-441e-864e-1a9081fbeab1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="12" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[N.I:]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

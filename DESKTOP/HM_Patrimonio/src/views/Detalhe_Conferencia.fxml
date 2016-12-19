@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="710.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.DetalheConferenciaController">
+   <children>
+      <TitledPane layoutX="6.0" layoutY="9.0" prefHeight="696.0" prefWidth="761.0" text="Detalhe de Conferencia">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="669.0" prefWidth="732.0">
+               <children>
+                  <Label fx:id="lbAmbiente1" layoutX="254.0" layoutY="14.0" text="Ambiente: ">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbAmbiente" layoutX="374.0" layoutY="14.0" prefHeight="27.0" prefWidth="170.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="393.0" layoutY="50.0" prefHeight="30.0" prefWidth="168.0" text="Data da Realização: ">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="50.0" prefHeight="30.0" prefWidth="186.0" text="Data de Agendamento:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txAgendamento" editable="false" layoutX="217.0" layoutY="50.0" prefHeight="30.0" prefWidth="132.0" />
+                  <TextField fx:id="txRealizacao" editable="false" layoutX="562.0" layoutY="50.0" prefHeight="30.0" prefWidth="162.0" />
+                  <RadioButton fx:id="radioAusente" layoutX="123.0" layoutY="100.0" mnemonicParsing="false" onAction="#buscarAusente" text="Ausentes">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="radioPresente" layoutX="28.0" layoutY="100.0" mnemonicParsing="false" onAction="#buscarPresente" text="Presentes">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="radioTodos" layoutX="213.0" layoutY="100.0" mnemonicParsing="false" onAction="#buscarTodos" text="Todos">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Label fx:id="lbQtd1" layoutX="393.0" layoutY="100.0" text="Qtd. Itens:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbQtd" layoutX="459.0" layoutY="98.0" prefHeight="21.0" prefWidth="39.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="514.0" layoutY="101.0" text="Presentes:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbQtdPresente" layoutX="586.0" layoutY="99.0" prefHeight="21.0" prefWidth="39.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="642.0" layoutY="100.0" text="Ausentes:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbQtdAusente" layoutX="704.0" layoutY="99.0" prefHeight="21.0" prefWidth="32.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tbPatrimonio" layoutX="20.0" layoutY="135.0" prefHeight="524.0" prefWidth="721.0">
+                    <columns>
+                      <TableColumn fx:id="columnId" prefWidth="113.0" text="N°.Identificador" />
+                      <TableColumn fx:id="columnDesc" prefWidth="197.0" text="Descrição" />
+                        <TableColumn fx:id="columnModelo" prefWidth="170.0" text="Modelo" />
+                        <TableColumn fx:id="columnMarca" prefWidth="111.0" text="Marca" />
+                        <TableColumn fx:id="columnStatus" prefWidth="128.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

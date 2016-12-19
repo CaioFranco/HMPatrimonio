@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HM Patriônios</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="listar">Patrimônios</string>
+    <string name="conferencia">Conferência</string>
+    <string name="inconsistencia">Inconsistência</string>
+    <string name="solicitacao">Solicitação</string>
+    <string name="verificar">Verificar</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="id">ID:</string>
+    <string name="modelo">Modelo:</string>
+    <string name="descricao">|  Descrição:</string>
+    <string name="reporta">Reportar</string>
+    <string name="motivo">Motivo:</string>
+    <string name="opcoes">Escolha a Opção Desejada:</string>
+    <string name="qrcode">Via QR-Code</string>
+    <string name="manual">Via Manual</string>
+    <string name="digite_motivo">Motivo...</string>
+    <string name="digite">Digite:</string>
+    <string name="enviar">Enviar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="campo_invalido">Campo Invalido!!!</string>
+    <string name="usuario">Usuário:</string>
+    <string name="senha">Senha:</string>
+    <string name="manterconectado">Manter Conectado</string>
+    <string name="botao">Acessar</string>
+    <string name="hint_usuario">Digite seu Usuário...</string>
+    <string name="hint_senha">Digite sua Senha...</string>
+    <string name="logo">Logo</string>
+    <string name="aviso_nome">Digite seu Login!!!</string>
+	<string name="aviso_usuario">Digite seu Usuário!!!</string>
+	<string name="aviso_senha">Digite sua Senha!!!</string>
+    <string name="aviso_logar">Usuário ou Senha Inválidos!!!</string>
+    <string name="lista_vazia">Não há Usuario Cadastrados!!!</string>
+    <string name="aviso_ambiente">Você não tem um ambiente cadastrado! </string>
+    <string name="aviso_agendamento">Não possui Agendamento!</string>
+    <string name="aviso_conferencia">Não Há Conferência Realizadas!</string>
+    <string name="sair">Sair</string>
+    <string name="sim">SIM</string>
+	<string name="nao">NÃO</string>
+	<string name="aviso_sair">Deseja realmente sair?</string>
+	<string name="aviso_reporte">Patrimônio já foi Reportado!!</string>
+	<string name="reportar">Reporta Inconsitência</string>
+	<string name="encerrar">Encerrar Conferência</string>
+	<string name="encerrar_opcao">Deseja Encerrar Conferência?</string>
+	<string name="conferido">Conferido!!!</string>
+	<string name="aviso_agendadas">Não Há Conferências Agendadas</string>
+	<string name="nao_patrimonios">Não Há Patrimônios!</string>
+	<string name="total_patrimonio">Total de Patrimônio:</string>
+	<string name="ausente_patrimonio">Patrimônios Ausentes:</string>
+	<string name="agendadas_realizadas">Agendadas</string>
+	<string name="ok">Ok</string>
+	<string name="identificador">Identificador:</string>
+	<string name="conferencia_depois"></string>
+	<string name="conferencia_marcada">Você Tem Uma Conferência Marcada!!</string>
+	<string name="nao_encontrado">Patriônio Invalido!!!</string>
+
+</resources>

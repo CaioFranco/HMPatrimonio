@@ -1,0 +1,7 @@
+.background {
+    -fx-background-color: #B0E0E6;
+}
+
+.novo {
+	  -fx-background-color: derive(#1d1d1d,20%);
+}

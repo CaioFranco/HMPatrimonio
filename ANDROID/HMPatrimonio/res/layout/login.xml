@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp"
+    android:background="#D3D3D3">
+    
+      <ImageView
+        android:id="@+id/image1"
+        style="@style/padrao"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true" 
+            android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/hm" />
+     
+    <TextView 
+        android:id="@+id/tv01"
+     style="@style/padrao"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/image1"
+        android:textSize="25sp"
+        android:text="@string/usuario"
+        />
+    
+
+    <EditText
+        android:id="@+id/et01"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv01"
+        android:layout_below="@id/tv01"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:hint="@string/hint_usuario"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView 
+        android:id="@+id/tv02"
+          style="@style/padrao"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/et01"
+        android:textSize="25sp"
+        android:text="@string/senha"
+    />
+
+    <EditText
+        android:id="@+id/et02"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv02"
+        android:layout_below="@id/tv02"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:hint="@string/hint_senha"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+          style="@style/padrao"
+        android:layout_alignStart="@id/checkBox1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/et02"
+        android:text="@string/botao" 
+        android:onClick="enviar"
+        android:background="#778899"/>
+    
+
+</RelativeLayout>

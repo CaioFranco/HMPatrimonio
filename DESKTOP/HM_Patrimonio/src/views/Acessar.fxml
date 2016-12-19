@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="319.0" prefWidth="540.0" stylesheets="@teste.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.LoginController">
+   <children>
+      <Label layoutX="51.0" layoutY="46.0" prefHeight="30.0" prefWidth="79.0" text="Login:" textAlignment="CENTER" textFill="#1c2f36">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="122.0" prefHeight="30.0" prefWidth="85.0" text="Senha:" textFill="#1c2f36">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txLogin" layoutX="138.0" layoutY="48.0" prefHeight="30.0" prefWidth="180.0" promptText="user">
+         <effect>
+            <DropShadow height="3.0" radius="1.0" width="3.0" />
+         </effect></TextField>
+      <PasswordField fx:id="txSenha" layoutX="139.0" layoutY="124.0" prefHeight="30.0" prefWidth="180.0" promptText="password">
+         <effect>
+            <DropShadow height="3.0" radius="1.0" width="3.0" />
+         </effect></PasswordField>
+      <Button fx:id="btnAcessar" layoutX="74.0" layoutY="206.0" mnemonicParsing="false" onAction="#Logar" prefHeight="50.0" prefWidth="150.0" text="Acessar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.7" topOpacity="0.4">
+               <input>
+                  <Glow />
+               </input>
+            </Reflection>
+         </effect></Button>
+      <Button fx:id="btnEsqueci" layoutX="326.0" layoutY="206.0" mnemonicParsing="false" onAction="#Esqueci" prefHeight="50.0" prefWidth="150.0" text="Esqueci a Senha" textFill="#b94949">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.7" topOpacity="0.4" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="157.0" fitWidth="170.0" layoutX="343.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/imagens/acessar.png" />
+         </image>
+         <effect>
+            <ColorAdjust saturation="-0.63" />
+         </effect></ImageView>
+   </children>
+   <effect>
+      <Blend mode="MULTIPLY" opacity="0.5" />
+   </effect>
+</AnchorPane>

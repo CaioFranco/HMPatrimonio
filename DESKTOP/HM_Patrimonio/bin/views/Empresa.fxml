@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.EmpresaController">
+   <children>
+      <Button fx:id="btnSalvar" layoutX="700.0" layoutY="405.0" maxWidth="75.0" mnemonicParsing="false" onAction="#salvar" prefHeight="30.0" prefWidth="80.0" text="Salvar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSair" layoutX="800.0" layoutY="405.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="75.0" text="Sair" textFill="#b94949">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TitledPane layoutX="18.0" layoutY="14.0" prefHeight="376.0" prefWidth="867.0" text="Dados para Cadastro" textFill="#1c2f36">
+         <content>
+            <AnchorPane prefHeight="330.0" prefWidth="865.0">
+               <children>
+                  <Label layoutX="570.0" layoutY="160.0" prefHeight="30.0" prefWidth="48.0" text="CEP: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="160.0" prefHeight="30.0" prefWidth="88.0" text="Endereço: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="570.0" layoutY="205.0" prefHeight="30.0" prefWidth="47.0" text="País: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="295.0" prefHeight="30.0" prefWidth="62.0" text="E-mail: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="77.0" layoutY="205.0" prefHeight="30.0" prefWidth="68.0" text="Cidade: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="603.0" layoutY="11.0" prefHeight="30.0" prefWidth="51.0" text="Logo: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="25.0" prefHeight="30.0" prefWidth="58.0" text="CNPJ: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="70.0" prefHeight="30.0" prefWidth="117.0" text="Razão Social: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="115.0" prefHeight="30.0" prefWidth="133.0" text="Nome Fantasia: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="536.0" layoutY="250.0" prefHeight="30.0" prefWidth="81.0" text="Telefone: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="77.0" layoutY="250.0" prefHeight="30.0" prefWidth="69.0" text="Estado: " textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgLogo" fitHeight="132.0" fitWidth="178.0" layoutX="660.0" layoutY="10.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../resource/imagens/semimagem.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnEscolher" layoutX="590.0" layoutY="113.0" maxWidth="75.0" mnemonicParsing="false" onAction="#escolherImagem" prefHeight="30.0" prefWidth="65.0" text="Escolher" textFill="#1c2f36">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Button>
+                  <TextField fx:id="txfCnpj" layoutX="150.0" layoutY="25.0" prefHeight="30.0" prefWidth="190.0" promptText="00.000.000/0000-00">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfRazao" layoutX="150.0" layoutY="70.0" minWidth="20.0" prefHeight="30.0" prefWidth="330.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfNome" layoutX="150.0" layoutY="115.0" prefHeight="30.0" prefWidth="330.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfEndereco" layoutX="150.0" layoutY="160.0" prefHeight="30.0" prefWidth="330.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfCep" layoutX="620.0" layoutY="160.0" prefHeight="30.0" prefWidth="215.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfCidade" layoutX="150.0" layoutY="205.0" prefHeight="30.0" prefWidth="330.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfPais" layoutX="620.0" layoutY="205.0" prefHeight="30.0" prefWidth="215.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <ComboBox fx:id="cmbEstado" layoutX="150.0" layoutY="250.0" prefHeight="30.0" prefWidth="220.0" promptText="Selecione o estado" />
+                  <TextField fx:id="txfTelefone" layoutX="620.0" layoutY="250.0" prefHeight="30.0" prefWidth="215.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="txfEmail" layoutX="150.0" layoutY="295.0" prefHeight="30.0" prefWidth="685.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TitledPane>
+   </children>
+</Pane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ap" prefHeight="529.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.senai.hm.controller.CategoriaController">
+   <children>
+      <TableView fx:id="tbCategoria" layoutX="20.0" layoutY="200.0" onMouseClicked="#selectItem" prefHeight="266.0" prefWidth="620.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="88.0" text="Código" />
+          <TableColumn fx:id="columnDesc" prefWidth="257.0" text="Descrição" />
+            <TableColumn fx:id="columnVida" prefWidth="117.0" text="Vida Útil" />
+            <TableColumn fx:id="columnDrep" prefWidth="157.0" text="Depreciação Anual" />
+        </columns>
+      </TableView>
+      <TitledPane layoutX="20.0" layoutY="15.0" prefHeight="150.0" prefWidth="622.0" text="Cadastro de Categoria">
+         <content>
+            <AnchorPane prefHeight="132.0" prefWidth="620.0">
+               <children>
+                  <TextField fx:id="txId" disable="true" editable="false" layoutX="96.0" layoutY="18.0" prefHeight="30.0" prefWidth="149.0" />
+                  <TextField fx:id="txDescricao" layoutX="380.0" layoutY="18.0" prefHeight="30.0" prefWidth="218.0" />
+                  <TextField fx:id="txVidaUtil" layoutX="145.0" layoutY="75.0" onKeyTyped="#KeyTyped" prefHeight="30.0" prefWidth="90.0" />
+                  <TextField fx:id="txDepreciacao" layoutX="497.0" layoutY="75.0" onKeyTyped="#KeyTyped1" prefHeight="30.0" prefWidth="94.0" />
+                  <Label layoutX="12.0" layoutY="78.0" text="Vida Útil(anos):">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="288.0" layoutY="20.0" text="Descrição:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="281.0" layoutY="78.0" text="Tx.Anual de Depreciação:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="20.0" text="Código:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </TitledPane>
+      <Button layoutX="302.0" layoutY="477.0" mnemonicParsing="false" onAction="#salvar" prefHeight="30.0" prefWidth="79.0" text="Salvar" textFill="#39593a">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="477.0" mnemonicParsing="false" onAction="#novo" prefHeight="30.0" prefWidth="79.0" text="Novo" textFill="#3ac8e8">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="551.0" layoutY="477.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="79.0" text="Sair" textFill="#b94949">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
